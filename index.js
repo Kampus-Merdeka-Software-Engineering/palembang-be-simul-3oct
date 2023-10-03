@@ -9,7 +9,7 @@ const cors = require('cors')
 app.use(cors());
 app.use( bodyParser.json())
 
-const sequelize = new Sequelize('mysql://root:p4RcDuT9SnW47KuL3Q8C@containers-us-west-206.railway.app:5951/railway')
+const sequelize = new Sequelize(process.env.DB_HOST)
 // async await
 
 const Product = sequelize.define('Product', {
