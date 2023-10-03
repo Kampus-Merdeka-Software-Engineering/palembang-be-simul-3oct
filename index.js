@@ -10,6 +10,7 @@ const port = 3000;
 app.use(cors());
 app.use( bodyParser.json())
 
+
 const sequelize = new Sequelize('mysql://root:trRZre2Y6rAaskXDeXLX@containers-us-west-135.railway.app:5435/railway')
 
 const Product = sequelize.define('Product', {
